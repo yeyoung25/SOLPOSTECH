@@ -11,10 +11,10 @@ $(window).on('scroll', function() {
 
 
   function sub02_02Toggle(){
-    $('.sub02_con02_detail ul li').click(function(){
-      $('.sub02_con02_detail ul li').removeClass('active');
+    $('.sub02_con02_detail>ul>li').click(function(){
+      $('.sub02_con02_detail>ul>li').removeClass('active');
       $(this).addClass('active');
-      $('.sub02_con02_detail div').removeClass('active');
+      $('.sub02_con02_detail>div').removeClass('active');
       $('.' + $(this).attr('data-tab')).addClass('active');
     });
   }

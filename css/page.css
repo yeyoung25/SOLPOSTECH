@@ -1088,9 +1088,16 @@
 .sub02_con02_detail>div .oemDetail>ul{
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     gap: 5px;
     max-width: 840px;
     margin: 0 auto;
+}
+.sub02_con02_detail>div .oemDetail ul li{
+    color: #565d67;
+    font-weight: 400;
+    align-items: center;
+    font-size: 14px;
 }
 .sub02_con02_detail>div .oemDetail>ul>li{
     width: calc((100% - 20px) / 5);
