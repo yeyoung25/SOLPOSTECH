@@ -32,14 +32,14 @@ header>div h1{
 }
 header>div h1 a{
     display: block;
-    background: url('../img/gmainLogo_w.png') no-repeat center / contain;
+    background: url('../img/mainLogo_w.png') no-repeat center / contain;
     font-size: 0;
     width: 240px;
     height: 31px;
 }
 header:hover>div h1 a,
 header.shrink>div h1 a{
-    background: url('../img/gmainLogo_b.png') no-repeat center / contain;
+    background: url('../img/mainLogo_b.png') no-repeat center / contain;
     font-size: 0;
     width: 240px;
     height: 31px;

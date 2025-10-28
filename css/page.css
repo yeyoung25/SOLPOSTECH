@@ -3,7 +3,7 @@
     max-width: 1920px;
     width: 100%;
     height: 100vh;
-    background: url('../img/gMain_Banner.png')no-repeat center/ cover;
+    background: url('../img/Main_Banner.png')no-repeat center/ cover;
     margin: 0 auto;
 }
 .mainBanner .mainBanBox .mainBanTxtBox{
@@ -128,7 +128,7 @@
     top: 50%;
     transform: translateY(-50%);
     right: 0px;
-    background: url('../img/gmore_b.png') no-repeat center / contain;
+    background: url('../img/more_b.png') no-repeat center / contain;
     width: 30px;
     height: 30px;
     transition: 0.3s ease;
@@ -155,7 +155,7 @@
 }
 .secCommon02>div:first-child,
 .secCommon02>div:last-child{
-    background: url('../img/gmain_Section02_1.png') no-repeat center/ cover;
+    background: url('../img/main_Section02_1.png') no-repeat center/ cover;
     color: #fff;
     position: relative;
 }
@@ -211,7 +211,7 @@
     top: 50%;
     transform: translateY(-50%);
     right: 0px;
-    background: url('../img/gmore_w.png') no-repeat center / contain;
+    background: url('../img/more_w.png') no-repeat center / contain;
     width: 30px;
     height: 30px;
     transition: 0.3s ease;
@@ -305,14 +305,14 @@
     border: 2px solid #1769b4;
 }
 .section04 .noticeWrap .swiper-button-prev{
-    background: url('../img/gleftBtn.png') no-repeat center / contain;
+    background: url('../img/leftBtn.png') no-repeat center / contain;
     width: 40px;
     height: 40px;
     left: auto;
     right: 80px; 
 }
 .section04 .noticeWrap .swiper-button-next{
-    background: url('../img/grightBtn.png') no-repeat center / contain;
+    background: url('../img/rightBtn.png') no-repeat center / contain;
     width: 40px;
     height: 40px;
 }
@@ -366,7 +366,7 @@
 /* section05 Fin */
 
 .section06{
-    background: url('../img/gmain_Section06.png') no-repeat center / cover;
+    background: url('../img/main_Section06.png') no-repeat center / cover;
     position: relative;
     max-width: 1920px;
     width: 100%;
@@ -549,7 +549,7 @@
 }
 .sub01_det04{
     position: relative;
-    background: url('../img/gsub01-1_4.png') no-repeat center / cover;
+    background: url('../img/sub01-1_4.png') no-repeat center / cover;
     height: 650px;
     display: flex;
     align-items: center;
@@ -658,7 +658,7 @@
 
 /* sub02 Fin */
 .sub01_con03 .sub01_con03_detail .logoIcBg01{
-    background: url('../img/gsub01-2_1.png')no-repeat center / cover;
+    background: url('../img/sub01-2_1.png')no-repeat center / cover;
     width: 100%;
     height: 419px;
     position: relative;
