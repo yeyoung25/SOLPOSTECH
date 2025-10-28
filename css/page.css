@@ -1076,8 +1076,9 @@
     margin: 0 auto;
     margin-bottom: 100px;
     width: 100%;
+    max-width: 850px;
 }
-.sub02_con02_detail>div .oemDetail>b{
+.sub02_con02_detail>div>div>b{
     display: block;
     text-align: center;
     color: #005bac;
@@ -1085,7 +1086,7 @@
     margin-bottom: 30px;
     font-size: 26px;
 }
-.sub02_con02_detail>div .oemDetail>ul{
+.sub02_con02_detail>div>div>ul{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -1093,16 +1094,16 @@
     max-width: 840px;
     margin: 0 auto;
 }
-.sub02_con02_detail>div .oemDetail ul li{
+.sub02_con02_detail>div>div ul li{
     color: #565d67;
     font-weight: 400;
     align-items: center;
     font-size: 14px;
 }
-.sub02_con02_detail>div .oemDetail>ul>li{
+.sub02_con02_detail>div>div>ul>li{
     width: calc((100% - 20px) / 5);
 }
-.sub02_con02_detail>div .oemDetail>ul>li>img{
+.sub02_con02_detail>div>div>ul>li>img{
     width: 100%;
 }
 .sub02_con02_detail>div{
@@ -1793,21 +1794,21 @@
     .sub02_con02_detail>div>img{
         margin-bottom: 50px;
     }
-    .sub02_con02_detail>div .oemDetail>b{
+    .sub02_con02_detail>div>div>b{
         font-size: 20px;
         margin-bottom: 20px;
     }
-    .sub02_con02_detail>div .oemDetail>ul{
+    .sub02_con02_detail>div>div>ul{
         display: flex;
         flex-wrap: wrap;
         gap: 5px;
         max-width: 840px;
         margin: 0 auto;
     }
-    .sub02_con02_detail>div .oemDetail>ul>li{
+    .sub02_con02_detail>div>div>ul>li{
         width: calc((100% - 15px) / 3);
     }
-    .sub02_con02_detail>div .oemDetail>ul>li>img{
+    .sub02_con02_detail>div>div>ul>li>img{
         width: 100%;
     }
     /* sub02_con02 Fin */
