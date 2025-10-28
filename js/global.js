@@ -5,6 +5,8 @@ $(window).on('scroll', function() {
 
   $(document).ready(function(){
     sub02_02Toggle();
+    menuButton();
+    // navButton();
   });
 
 
@@ -15,4 +17,20 @@ $(window).on('scroll', function() {
       $('.sub02_con02_detail div').removeClass('active');
       $('.' + $(this).attr('data-tab')).addClass('active');
     });
+  }
+
+  function menuButton(){
+    var menuBar = document.querySelector(".menuBar");
+    menuBar.addEventListener("click", () => {
+    menuBar.classList.toggle("toggle");
+    });
+  }
+
+
+  function navButton(){
+      $('.menuBar').on('click', function(){
+        $(this).toggleClass('toggle');
+        $('.navMenu').toggleClass('active');
+      });
+
   }

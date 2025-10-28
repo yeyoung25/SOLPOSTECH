@@ -101,6 +101,19 @@ header>div ul li:hover .depth2 li a{
 header>div ul li:hover .depth2 li a:hover{
     color: #1769b4;
 }
+header.shrink .menuBar span{
+    transition: all 0.4s;
+}
+header .menuBar.toggle span:first-child{
+    transform: rotate(-45deg) translate(-4.5px, 3px);
+}
+header .menuBar.toggle span:nth-child(2){
+    opacity: 0;
+}
+header .menuBar.toggle span:last-child{
+    transform: rotate(45deg) translate(-5px, -4px);
+}
+
 footer{
     background-color: #2a2a2a;
 }

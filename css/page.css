@@ -267,7 +267,7 @@
     top: 50%;
     transform: translateY(-50%);
     right: 0px;
-    background: url(img/more_b.png) no-repeat center / contain;
+    background: url('../img/more_b.png') no-repeat center / contain;
     width: 30px;
     height: 30px;
     transition: 0.3s ease;
@@ -1075,6 +1075,7 @@
     display: block;
     margin: 0 auto;
     margin-bottom: 100px;
+    width: 100%;
 }
 .sub02_con02_detail>div .oemDetail>b{
     display: block;
@@ -1776,7 +1777,33 @@
         width: 755px;
     }
     /* sub02_con01 Fin */
-    
+    .sub02_con02_detail>ul{
+        margin-bottom: 30px;
+    }
+    .sub02_con02_detail>ul li{
+        font-size: 16px;
+    }
+    .sub02_con02_detail>div>img{
+        margin-bottom: 50px;
+    }
+    .sub02_con02_detail>div .oemDetail>b{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .sub02_con02_detail>div .oemDetail>ul{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+        max-width: 840px;
+        margin: 0 auto;
+    }
+    .sub02_con02_detail>div .oemDetail>ul>li{
+        width: calc((100% - 15px) / 3);
+    }
+    .sub02_con02_detail>div .oemDetail>ul>li>img{
+        width: 100%;
+    }
+    /* sub02_con02 Fin */
 
 }
 /* 모바일 */
