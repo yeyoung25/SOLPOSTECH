@@ -1137,9 +1137,10 @@
 }
 .sub02_con03 .diagram{
   position: relative;
-  width: 700px;
+  max-width: 700px;
   height: 700px;
   margin: 0 auto;
+  clear: both;
 }
 .sub02_con03 .centerBox{
   position: absolute;
@@ -1812,6 +1813,10 @@
         width: 100%;
     }
     /* sub02_con02 Fin */
+    .sub02_con03_txt{
+        padding: 30px 20px;
+        font-size: 16px;
+    }
 
 }
 /* 모바일 */
