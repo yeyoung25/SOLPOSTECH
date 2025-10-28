@@ -1,0 +1,409 @@
+*{
+    margin: 0; padding: 0; text-decoration: none; list-style: none; color: #222; font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
+}
+body{max-width: 1920px;margin: 0 auto;}
+header{
+    position: fixed;
+    box-sizing: border-box;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100px;
+    z-index: 1000;
+    transition-duration: 0.2s;
+}
+header>div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 72.92%;
+    margin: 0 auto;
+}
+header:hover,
+header.shrink{
+    background-color: #fff;
+}
+header>div h1{
+    float: left;
+    padding: 35px 0;
+    line-height: 60px;
+    font-size: 0;
+}
+header>div h1 a{
+    display: block;
+    background: url('/img/mainLogo_w.png') no-repeat center / contain;
+    font-size: 0;
+    width: 240px;
+    height: 31px;
+}
+header:hover>div h1 a,
+header.shrink>div h1 a{
+    background: url('/img/mainLogo_b.png') no-repeat center / contain;
+    font-size: 0;
+    width: 240px;
+    height: 31px;
+}
+header>div ul{
+    display: flex;
+}
+header>div ul li{
+    position: relative;
+}
+header>div ul li>a{
+    display: block;
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+}
+header:hover>div a:hover,
+header.shrink>div a:hover{
+    color: #1769b4;
+    font-weight: 700;
+}
+header:hover>div a:hover
+
+
+header:hover>div ul li{
+    position: relative;
+}
+header:hover>div>ul>li>a,
+header.shrink>div>ul>li>a{
+    color: #000;
+    font-size: 18px;
+    line-height: 100px;
+    font-weight: 600;
+}
+header>div>ul>li:not(:first-child){
+    margin-left: 2.605vw;
+}
+header>div .depth2{
+    display: none;
+    position: absolute;
+    top: 97px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    padding: 30px;
+    border-top: 3px solid #1769b4;
+}
+header>div .depth2 li:not(:last-child){
+    margin-bottom: 30px;
+}
+header>div ul li:hover .depth2{
+    display: block;
+    width: 150px;
+}
+header>div ul li:hover .depth2 li a{
+    color: #222;
+}
+header>div ul li:hover .depth2 li a:hover{
+    color: #1769b4;
+}
+footer{
+    background-color: #2a2a2a;
+}
+footer>div,
+footer>p{
+    width: 72.92%;
+    margin: 0 auto;
+}
+footer .fotTop{
+    padding: 60px 0 30px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #666666;
+}
+footer .fotTop>div:first-child{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 45px;
+}
+footer .fotTop>div:first-child>div>a{
+    color: #cccccc;
+    padding: 0 30px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+footer .fotTop>div:first-child>div>a:first-child{position: relative;}
+footer .fotTop>div:first-child>div>a:first-child::after{
+    content: '';
+    display: inline-block;
+    clear: both;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 12px;
+    background-color: #cccccc;
+}
+footer .fotTop>div:first-child>div>a:hover{
+    color: #4f9ce2;
+}
+footer .fotTop .footerInfo p{
+    color: #cccccc;
+}
+footer .fotTop .footerInfo p:not(:last-child){
+    margin-bottom: 10px;
+}
+footer .fotbtm{
+    display: flex;
+    padding: 30px 0;
+    box-sizing: border-box;
+}
+footer .fotbtm div:first-child{
+    font-weight: 800;
+    font-size: 45px;
+    width: 55%;
+    min-width: 270px;
+}
+footer .fotbtm div:first-child b{
+    display: block;
+    color: #999;
+    margin-bottom: 10px;
+}
+footer .fotbtm div>strong{
+    display: block;
+    color: #cccccc;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+}
+footer .fotbtm div>strong span{
+    color: #cccccc;
+    font-size: 26px;
+    font-weight: 700;
+}
+footer .fotbtm div:nth-child(2){
+    width: 30%;
+    min-width: 200px;
+}
+footer .fotbtm div:last-child{
+    width: 15%;
+    min-width: 200px;
+}
+footer .fotbtm div h4,
+footer .fotbtm div p{
+    color: #cccccc;
+}
+footer .fotbtm div h4{
+    margin-bottom: 30px;
+    font-weight: 800;
+    font-size: 26px;
+}
+footer .fotbtm div p:not(:last-child){
+    margin-bottom: 5px;
+}
+footer>p{
+    color: #999;
+    padding: 20px 0;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+/* footer Fin */
+
+
+@media screen and (max-width: 767px){
+    header {
+        height: 80px;
+    }
+    header>div h1 {
+        padding: 25px 0;
+    }
+    header:hover>div h1 a,
+    header.shrink>div h1 a{
+        width: 200px;
+    }
+    .introText h2{
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
+    .sub01Img{
+        height: 300px;
+    }
+    .sub01_con01{
+        width: 95%;
+    }
+    .SubTitle{
+        padding: 50px 0;
+    }
+    .SubTitle span{
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    .SubTitle b{
+        font-size: 30px;
+    }
+    header>div,
+    .common {
+        width: 95%;
+    }
+    .navMenu{
+        display: none;
+    }
+    .menuBar{
+        display: block;
+        position: relative;
+        width: 80px;
+        height: 80px;
+    }
+    .menuBar span{
+        position: absolute;
+        display: inline-block;
+        background-color: #fff;
+        width: 20px;
+        height: 2px;
+        transform: translateY(-50%);
+    }
+    header:hover .menuBar span,
+    header.shrink .menuBar span{
+        background-color: #000;
+        height: 2px;
+    }
+    .menuBar span:first-child{
+        top: 34px;
+        right: 0;
+    }
+    .menuBar span:nth-child(2){
+        top: 50%;
+        right: 0;
+    }
+    .menuBar span:last-child{
+        top: 46px;
+        right: 0;
+    }
+    footer .fotbtm div:first-child{
+        margin-bottom: 50px;
+    }
+    footer .fotTop>div:first-child{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    footer .fotTop img+div{
+        width: 100%;
+        text-align: center;
+        margin-top: 35px;
+    }
+    footer .fotTop .footerInfo p{
+        text-align: center;
+        word-break: keep-all;
+        font-size: 14px;
+    }
+    footer .fotTop .footerInfo p:not(:last-child){
+        margin-bottom: 20px;
+    }
+    footer .fotTop{
+        padding: 40px 0 35px;
+    }
+    footer .fotTop>div:first-child>div>a:first-child,
+    footer .fotTop>div:first-child>div>a{
+        font-size: 14px;
+        font-weight: 700;
+    }
+    footer .fotTop>div:first-child{
+        margin-bottom: 35px;
+    }
+    footer .fotTop,
+    footer>div,
+    footer>p{
+        width: 95%;
+    }
+    footer .fotbtm{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    footer .fotbtm b{
+        display: block;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    footer .fotbtm div h4{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    footer .fotbtm div p{
+        font-size: 14px;
+    }
+    footer>p{
+        font-size: 12px;
+        text-align: center;
+    }
+    /* footer Fin */
+}
+@media screen and (min-width: 768px) and (max-width: 1279px){
+    header {
+        height: 80px;
+    }
+    header>div{
+        width: 95%;
+    }
+    .sub01_con02{
+        width: 95%;
+    }
+    header>div h1{
+        padding: 25px 0;
+    }
+    header:hover>div>ul>li>a{
+        line-height: 80px;
+    }
+    header>div .depth2{
+        top: 77px;
+    }
+    .common{
+        width: 95%;
+    }
+    .navMenu{
+        display: none;
+    }
+    .menuBar{
+        display: block;
+        position: relative;
+        width: 80px;
+        height: 80px;
+    }
+    .menuBar span{
+        position: absolute;
+        display: inline-block;
+        background-color: #fff;
+        width: 20px;
+        height: 2px;
+        transform: translateY(-50%);
+    }
+    header:hover .menuBar span,
+    header.shrink .menuBar span{
+        background-color: #000;
+        height: 2px;
+    }
+    .menuBar span:first-child{
+        top: 34px;
+        right: 0;
+    }
+    .menuBar span:nth-child(2){
+        top: 50%;
+        right: 0;
+    }
+    .menuBar span:last-child{
+        top: 46px;
+        right: 0;
+    }
+    footer .fotTop,
+    footer>div,
+    footer>p{
+        width: 95%;
+    }
+    footer .fotTop{
+        padding: 50px 0 30px;
+    }
+    footer .fotTop>div:first-child{
+        margin-bottom: 30px;
+    }
+    /* footer Fin */
+}
+
+@media screen and (min-width:1280px){
+    .menuBar{
+        display: none;
+    }
+}

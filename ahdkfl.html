@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" as="style" crossorigin href="https:/cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+    <link rel="stylesheet" href="https:/cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https:/code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="js/global.js"></script>
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/page.css">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>시장 기회 (Market Opportunity)</title>
+  <style>
+    :root {
+      --bg: #f7f8fa;
+      --card: #ffffff;
+      --text: #1a1a1a;
+      --muted: #6b7280;
+      --primary: #4f9ce2; /* 브랜드 컬러 교체 지점 */
+      --accent: #eaf3ff;
+      --shadow: 0 8px 24px rgba(0,0,0,0.08);
+      --radius-xl: 24px;
+      --radius-lg: 18px;
+      --radius-md: 12px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; padding: 64px 24px; background: var(--bg); color: var(--text);
+      font-family: "Pretendard", "SUIT", "Noto Sans KR", system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+    }
+    .slide { max-width: 1200px; margin: 0 auto; background: var(--card); box-shadow: var(--shadow); border-radius: var(--radius-xl); padding: 72px 84px; }
+
+    /* 헤더 */
+    .badge { display: inline-flex; align-items: center; gap: 10px; background: var(--accent); color: var(--primary); font-weight: 700; letter-spacing: -0.2px; padding: 10px 18px; border-radius: 999px; font-size: 18px; box-shadow: inset 0 0 0 1px rgba(79,156,226,.15); }
+    .badge .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--primary); }
+
+    h1 { font-size: clamp(28px, 4vw, 40px); margin: 18px 0 8px; letter-spacing: -0.5px; }
+    .subtitle { color: var(--muted); font-size: clamp(16px, 2.2vw, 20px); margin-bottom: 36px; }
+
+    /* 레이아웃 */
+    .grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 24px; }
+    @media (max-width: 980px) { .grid { grid-template-columns: 1fr; } }
+
+    /* 타겟 카드 */
+    .targets { background: #fff; border-radius: var(--radius-lg); padding: 24px; box-shadow: inset 0 0 0 1px #eef2f7; }
+    .section-h { font-weight: 800; font-size: 18px; margin-bottom: 14px; letter-spacing: -0.2px; }
+    .list { margin: 0; padding: 0; list-style: none; display: grid; gap: 12px; }
+    .item { background: #fafafa; border-radius: var(--radius-md); padding: 14px 16px; border-left: 6px solid var(--primary); line-height: 1.65; }
+    .item strong { color: var(--text); }
+
+    /* 시장 규모 카드 */
+    .market { background: #fff; border-radius: var(--radius-lg); padding: 24px; box-shadow: inset 0 0 0 1px #eef2f7; display: grid; gap: 12px; }
+    .number { font-size: clamp(32px, 6vw, 56px); font-weight: 900; letter-spacing: -1px; }
+    .number small { font-size: 14px; color: var(--muted); font-weight: 500; }
+    .note { color: var(--muted); font-size: 15px; line-height: 1.8; }
+
+    /* 미니 바차트(장식) */
+    .bars { display: grid; gap: 8px; margin-top: 6px; }
+    .bar { height: 10px; background: #f2f6ff; border-radius: 999px; position: relative; overflow: hidden; }
+    .bar > i { position: absolute; inset: 0; width: var(--w, 60%); background: linear-gradient(90deg, var(--primary), #6fb2ec); display: block; border-radius: 999px; box-shadow: 0 0 0 1px rgba(79,156,226,.2) inset; }
+    .bar-label { display: flex; justify-content: space-between; font-size: 12px; color: #4b5563; margin-top: 2px; }
+
+    /* 하단 인사이트 박스 */
+    .insight { margin-top: 24px; background: #fafafa; border-radius: var(--radius-md); padding: 18px 20px; border-left: 6px solid var(--primary); line-height: 1.8; font-size: 16px; }
+    .highlight { color: var(--primary); font-weight: 800; }
+  </style>
+</head>
+<body>
+  <main class="slide" role="document" aria-labelledby="title">
+
+    <!-- 헤더 -->
+    <div class="badge" aria-label="핵심문구"><span class="dot"></span><span>성장 기회</span></div>
+    <h1 id="title">시장 기회 (Market Opportunity)</h1>
+    <p class="subtitle">MZ세대의 소셜 네트워킹·웰니스 트렌드에 힘입어 생활스포츠 시장은 지속 성장 중입니다.</p>
+
+    <!-- 본문 그리드 -->
+    <section class="grid" aria-label="시장 기회 세부">
+      <!-- 타겟 고객 -->
+      <section class="targets" aria-labelledby="targets-h">
+        <h2 id="targets-h" class="section-h">타겟 고객</h2>
+        <ul class="list">
+          <li class="item"><strong>1차:</strong> 20–30대 직장인, 대학생 — 새로운 사람과의 만남 & 취미 확장 니즈 높음</li>
+          <li class="item"><strong>2차:</strong> 전 연령대의 스포츠 미참여 잠재고객 — 초보자 부담을 완화하는 온보딩 필요</li>
+        </ul>
+      </section>
+
+      <!-- 시장 규모 -->
+      <section class="market" aria-labelledby="market-h">
+        <h2 id="market-h" class="section-h">시장 규모</h2>
+        <div class="number">약 10조 원 <small>국내 생활스포츠(등산·러닝·축구 등) 추정</small></div>
+        <p class="note">소셜 네트워킹과 웰니스 수요 확대에 따라 지속 성장 중. 커뮤니티 기반 참여 모델의 확장성이 높음.</p>
+        <!-- 장식형 미니 바차트: 관심/참여/지속 트렌드 가정치 시각화 (비데이터 그래픽) -->
+        <div class="bars" aria-hidden="true">
+          <div>
+            <div class="bar" style="--w:75%"><i></i></div>
+            <div class="bar-label"><span>관심도</span><span>상승</span></div>
+          </div>
+          <div>
+            <div class="bar" style="--w:62%"><i></i></div>
+            <div class="bar-label"><span>참여도</span><span>확대</span></div>
+          </div>
+          <div>
+            <div class="bar" style="--w:68%"><i></i></div>
+            <div class="bar-label"><span>지속성</span><span>개선</span></div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- 인사이트 문장 -->
+    <aside class="insight" aria-label="핵심 인사이트">
+      타겟 세그먼트가 넓고, <span class="highlight">초보자 진입장벽을 완화</span>하는 경험 설계에 따라 시장 내 점유 확장 기회가 큽니다.
+    </aside>
+
+  </main>
+</body>
+</html>
+
+</body>
+</html>
