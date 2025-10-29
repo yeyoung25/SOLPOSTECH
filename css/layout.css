@@ -101,7 +101,7 @@ header>div ul li:hover .depth2 li a{
 header>div ul li:hover .depth2 li a:hover{
     color: #1769b4;
 }
-header.shrink .menuBar span{
+header .menuBar span{
     transition: all 0.4s;
 }
 header .menuBar.toggle span:first-child{
@@ -233,7 +233,7 @@ footer>p{
         font-size: 30px;
         margin-bottom: 5px;
     }
-    .sub01Img{
+    .subImg{
         height: 300px;
     }
     .sub01_con01{
