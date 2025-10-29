@@ -1322,8 +1322,50 @@
     margin: 0 auto;
     max-width: 450px;
 }
-
 /* sub02_con04 Fin */
+.sub04_con03 .sub04_con03_txt{
+    background-color: #d9e9f9;
+    margin-bottom: 100px;
+}
+.sub04_con03 .sub04_con03_txt div{
+    width: 72.92%;
+    margin: 0 auto;
+    padding: 80px 0;
+    box-sizing: border-box;
+}
+.sub04_con03 .sub04_con03_txt div p{
+    text-align: center;
+    line-height: 24px;
+    word-break: keep-all;
+    font-weight: 500;
+    font-size: 18px;
+}
+.sub04_con03 .sub04_con03_txt div p:first-child{
+    position: relative;
+    margin-bottom: 250px;
+}
+.sub04_con03 .sub04_con03_txt div p:first-child::after{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 110px;
+    width: 1px;
+    height: 16.323vh;
+    background-color: #005bac;
+}
+.sub04_con03 .sub04_con03_txt div p mark{
+    background-color: transparent;
+    font-style: normal;
+    color: #005bac;
+    font-weight: 600;
+}
+.sub04_con03 img{
+    width: 100%;
+}
+
+/* sub04_con03 Fin */
 
 @media screen and (max-width: 767px){
     .mainBanner .mainBanBox .mainBanTxtBox{
@@ -1591,7 +1633,7 @@
     /* main Fin */
     .introText h2{
         font-size: 30px;
-        margin-bottom: 5px;
+        margin-bottom: 15px;
     }
     .subImg{
         height: 300px;
@@ -2033,6 +2075,26 @@
         font-size: 20px;
     }
     /* sub02_con04 Fin */
+    .sub04_con03 .sub04_con03_txt div{
+        padding: 50px 0;
+    }
+    .sub04_con03 .sub04_con03_txt div p{
+        font-size: 14px;
+    }
+    .sub04_con03 .sub04_con03_txt div p br{
+        display: none;
+    }
+    .sub04_con03 .sub04_con03_txt div p:first-child{
+        margin-bottom: 100px;
+    }
+    .sub04_con03 .sub04_con03_txt div p:first-child::after{
+        top: 125px;
+        height: 5vh;
+    }
+    .sub04_con03 .sub04_con03_txt{
+        margin-bottom: 50px;
+    }
+    /* sub04_con01 Fin */
 }
 /* 모바일 */
 @media screen and (min-width: 768px) and (max-width: 1279px){
@@ -2134,9 +2196,31 @@
         padding-right: 30px;
         box-sizing: border-box;
     }
+    .SubTitle{
+        padding: 80px 0 50px;
+    }
+    .introText h2{
+        font-size: 40px;
+    }
+    .introText b{
+        font-weight: 600;
+        font-size: 20px;
+    }
+    .subImg{
+        height: 300px;
+    }
     /* 공통 */
     .section04 .section04Box{
         width: 95%;
+    }
+    .SubTitle span{
+        font-size: 20px;
+    }
+    .SubTitle b{
+        font-size: 40px;
+    }
+    .SubTitle>p{
+        font-size: 16px;
     }
     .section02>div, 
     .section03>div {
@@ -2395,6 +2479,17 @@
         font-size: 24px;
     }
     /* sub02_con04 Fin */
+    .sub04_con03 .sub04_con03_txt div p{
+        font-size: 16px;
+    }
+    .sub04_con03 .sub04_con03_txt div p:first-child{
+        margin-bottom: 150px;
+    }
+    .sub04_con03 .sub04_con03_txt div p:first-child::after{
+        top: 105px;
+        height: 10vh;
+    }
+    /* sub04_con01 Fin */
 }
 @media screen and (min-width: 768px) and (max-width: 900px){
     .section01 .section01Box {

@@ -225,9 +225,11 @@ footer>p{
     header>div h1 {
         padding: 25px 0;
     }
+    
+    header>div h1 a,
     header:hover>div h1 a,
     header.shrink>div h1 a{
-        width: 200px;
+        width: 180px;
     }
     .introText h2{
         font-size: 30px;
@@ -400,6 +402,11 @@ footer>p{
     .menuBar span:last-child{
         top: 46px;
         right: 0;
+    }
+    header>div h1 a,
+    header:hover>div h1 a,
+    header.shrink>div h1 a{
+        width: 200px;
     }
     footer .fotTop,
     footer>div,
