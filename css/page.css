@@ -1296,6 +1296,7 @@
     text-align: center;
     line-height: 30px;
     font-size: 20px;
+    font-size: clamp(16px,1.4vw,20px);
 }
 .sub02_con04 .sub02_con04_detail ul{
     position: relative;
@@ -2368,7 +2369,7 @@
     }
     .sub02_con04 .sub02_con04_detail p{
         line-height: 22px;
-        font-size: 16px;
+        font-size: clamp(14px,1.5vw,16px);
     }
     .sub02_con04 .sub02_con04_detail ul li{
         position: absolute;

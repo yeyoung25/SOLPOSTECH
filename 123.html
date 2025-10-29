@@ -1,108 +1,111 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="SOLPOSTECH">
-    <meta property="og:description" content="솔포스텍 홈페이지입니다.">
-    <meta property="og:image" content="img/solpSnsImg.png">
-    <meta property="og:image" content="img/solpSnsImg.png">
-    <meta property="og:url" content="https://yeyoung25.github.io/SOLPOSTECH/">
-  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-  <script src="js/global.js"></script>
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/page.css">
-  <title>부품별 정밀광학 클리닝</title>
-  <style>
-    body {
-      font-family: "NanumSquare", Arial, sans-serif;
-      margin: 20px;
-      line-height: 1.6;
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>부품별 정밀광학 클리닝의 필요성</title>
+<style>
+  :root{
+    --blue:#0b66b2;            /* 제목 바 / 포인트 블루 */
+    --blue-200:#e8f2fb;        /* 헤더 배경 연블루 */
+    --line:#9ec7e9;            /* 표 라인 색 */
+    --text:#222;
+    --muted:#5a6b7b;
+  }
+
+  body{font-family:"Pretendard","Noto Sans KR",system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Arial,sans-serif;color:var(--text);margin:0;background:#fff}
+  .wrap{max-width:1100px;margin:40px auto;padding:0 16px}
+
+  /* 제목 */
+  .title{
+    font-weight:800;
+    font-size:clamp(20px,2.6vw,30px);
+    margin:0 0 14px;
+  }
+  .title .em{color:var(--blue)}
+  .title-bar{
+    height:6px;background:var(--blue);width:100%;margin:8px 0 18px;border-radius:3px
+  }
+
+  /* 표 */
+  .tbl{
+    width:100%;
+    border-collapse:separate;
+    border-spacing:0;
+    table-layout:fixed;
+    border:1px solid var(--line);
+    border-radius:8px;
+    overflow:hidden;
+  }
+  .tbl th,
+  .tbl td{
+    border-right:1px solid var(--line);
+    border-top:1px solid var(--line);
+    padding:16px 14px;
+    vertical-align:middle;
+    line-height:1.6;
+    font-size:clamp(14px,1.1vw,16px);
+    background:#fff;
+  }
+  .tbl tr:first-child th,
+  .tbl tr:first-child td{border-top:0}
+  .tbl th:last-child,
+  .tbl td:last-child{border-right:0}
+
+  /* 헤더 */
+  .tbl thead th{
+    background:var(--blue-200);
+    color:#0a2b4a;
+    font-weight:700;
+    text-align:center;
+  }
+
+  /* 첫열: 이미지 */
+  .col-img{width:160px;text-align:center}
+  .thumb{
+    width:120px;height:90px;object-fit:cover;border:1px solid var(--line);border-radius:4px;background:#f6f8fb
+  }
+
+  /* 두번째 열 너비 살짝 좁힘 */
+  .col-part{width:180px;color:var(--blue);font-weight:700;text-align:center}
+
+  /* 내용 칼럼 */
+  .col-func{width:33%}
+  .col-need{width:35%;color:var(--muted)}
+
+  /* 모바일 카드형 변환 */
+  @media (max-width: 820px){
+    .tbl thead{display:none}
+    .tbl, .tbl tbody, .tbl tr, .tbl td{display:block;width:100%}
+    .tbl tr{border-top:1px solid var(--line)}
+    .tbl tr:first-child{border-top:0}
+    .tbl td{
+      border-right:0;border-top:0;
+      padding:10px 12px 10px 120px; /* 라벨 공간 */
+      position:relative;min-height:48px
     }
-
-    h2 {
-      margin-bottom: 20px;
-      color: #004080;
+    .tbl td::before{
+      content:attr(data-th);
+      position:absolute;left:12px;top:10px;
+      width:96px;color:#456; font-weight:700; font-size:13px
     }
-
-    .table-responsive {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 15px;
-    }
-
-    .table-responsive th,
-    .table-responsive td {
-      border: 1px solid #ddd;
-      padding: 12px;
-      vertical-align: top;
-      text-align: left;
-    }
-
-    .table-responsive th {
-      background: #f0f4f8;
-      font-weight: bold;
-    }
-
-    .table-responsive img {
-      max-width: 100px;
-      height: auto;
-      display: block;
-      margin: 0 auto;
-    }
-
-    /* 모바일 반응형 */
-    @media (max-width: 768px) {
-      .table-responsive,
-      .table-responsive thead,
-      .table-responsive tbody,
-      .table-responsive th,
-      .table-responsive td,
-      .table-responsive tr {
-        display: block;
-        width: 100%;
-      }
-
-      .table-responsive thead {
-        display: none; /* 헤더 숨김 */
-      }
-
-      .table-responsive tr {
-        margin-bottom: 20px;
-        border: 1px solid #ccc;
-        border-radius: 8px;
-        padding: 10px;
-        background: #fafafa;
-      }
-
-      .table-responsive td {
-        border: none;
-        padding: 8px 0;
-      }
-
-      .table-responsive td::before {
-        content: attr(data-label);
-        font-weight: bold;
-        display: block;
-        margin-bottom: 5px;
-        color: #333;
-      }
-
-      .table-responsive img {
-        max-width: 80%;
-        margin-bottom: 10px;
-      }
-    }
-  </style>
+    .col-img, .col-part, .col-func, .col-need{width:auto}
+    .tbl .td-img{padding-left:12px}
+    .tbl .td-img::before{content:"오염된 부품";}
+    .tbl .td-part::before{content:"구성부품";}
+    .tbl .td-func::before{content:"기능";}
+    .tbl .td-need::before{content:"클리닝 필요성";}
+    .thumb{width:100%;height:auto;max-width:260px}
+  }
+</style>
 </head>
 <body>
-
-  <div>
-    <h2>부품별 정밀광학 클리닝의 필요성</h2>
-    <table class="table-responsive">
+  <div class="wrap">
+    <b class="title">부품별 <span class="em">정밀광학</span> 클리닝의 필요성</b>
+    <table class="tbl">
+      <colgroup>
+        <col class="col-img"><col class="col-part"><col class="col-func"><col class="col-need">
+      </colgroup>
       <thead>
         <tr>
           <th>오염된 부품</th>
@@ -113,51 +116,53 @@
       </thead>
       <tbody>
         <tr>
-          <td data-label="오염된 부품"><img src="img/multi.jpg" alt="멀티렌즈"></td>
-          <td data-label="구성부품">멀티렌즈</td>
-          <td data-label="기능">램프의 빛을 굴절시키는 기능을 합니다.</td>
-          <td data-label="클리닝 필요성">램프와 가장 가까운 글라스로서 램프열에 의해 먼지가 눌러붙어 흐릿해질 수 있습니다.</td>
+          <td class="td-img" data-th="오염된 부품" rowspan="2">
+            <img src="img/sub04-1_2.png" alt="멀티렌즈" class="thumb">
+          </td>
+          <td class="td-part" data-th="구성부품">멀티렌즈</td>
+          <td class="td-func" data-th="기능" rowspan="2">램프의 빛을 굴절시키는 기능을 합니다.</td>
+          <td class="td-need" data-th="클리닝 필요성">램프와 가장 가까운 글라스로서 램프열에 의해 먼지가 눌러붙어 그을리게 될 수 있습니다.</td>
         </tr>
+
         <tr>
-          <td data-label="오염된 부품"><img src="img/pbs.jpg" alt="PBS 글라스"></td>
-          <td data-label="구성부품">PBS 글라스</td>
-          <td data-label="기능">광시간 커두면 PBS렌즈가 열을 견디지 못하고 파손됩니다.</td>
-          <td data-label="클리닝 필요성">소홀한 관리로 먼지 등이 쌓이면 타버릴 수 있습니다.</td>
+          <td class="td-part">PBS 글라스</td>
+          <td class="td-need">장시간 켜두면 PBS렌즈가 열을 견디지 못하고 파손되거나, 소홀한 관리로 먼지 등에 의해 훼손될 수 있음</td>
         </tr>
+
         <tr>
-          <td data-label="오염된 부품"><img src="img/reflection.jpg" alt="반사경"></td>
-          <td data-label="구성부품">반사경</td>
-          <td data-label="기능">램프를 통해 들어오는 빛을 분리하여 LED 역할까지 도달할 수 있도록 합니다.</td>
-          <td data-label="클리닝 필요성">빛을 투과시키는 장치의 상태가 양호하지 않으면 특정 색상이 흐리게 나옵니다.</td>
+          <td class="td-img" rowspan="2"><img src="img/sub04-1_3.png" alt="반사경" class="thumb"></td>
+          <td class="td-part">반사경</td>
+          <td class="td-func">램프를 통해 들어오는 빛을 분해하여 LED 액정까지 도달할 수 있도록 합니다.</td>
+          <td class="td-need">빛을 투과시키는 장치의 상태가 양호하지 않으면 특정 색상이 흐리게 나옵니다.</td>
         </tr>
+
         <tr>
-          <td data-label="오염된 부품"><img src="img/led.jpg" alt="LED 판넬"></td>
-          <td data-label="구성부품">LED 판넬, 폴라라이즈 글라스</td>
-          <td data-label="기능">RED, GREEN, BLUE 색상을 구분하여 시각적 정보를 변환·전달합니다.</td>
-          <td data-label="클리닝 필요성">파손되면 줄이 생기거나 화면이 검게 보일 수 있고, 특정 색상이 안보일 수 있습니다.</td>
+          <td class="td-part">LED 패널<br>폴라로이드 글라스</td>
+          <td class="td-func">LED 패널은 RED, GREEN, BLUE 세 가지로 구성되어 있으며, 시각정보를 변환시켜 전달하는 매우 중요한 역할을 합니다.</td>
+          <td class="td-need">파손되면 수직으로 줄이 생기거나 화면이 점처럼 보일 수 있고, 특정색상이 안나올 수 있습니다.</td>
         </tr>
+
         <tr>
-          <td data-label="오염된 부품"><img src="img/lens.jpg" alt="렌즈"></td>
-          <td data-label="구성부품">렌즈</td>
-          <td data-label="기능">빛을 스크린에 쏘아주는 기능을 합니다.</td>
-          <td data-label="클리닝 필요성">미세먼지가 렌즈에 쌓이면 화질을 떨어뜨립니다.</td>
+          <td class="td-img"><img src="img/sub04-1_4.png" alt="렌즈" class="thumb"></td>
+          <td class="td-part">렌즈</td>
+          <td class="td-func">빛을 스크린에 쏘아주는 기능을 합니다.</td>
+          <td class="td-need">필터로도 여과되지 않는 미세먼지가 렌즈의 부분을 오염시켜 화질을 떨어뜨리는 원인이 됩니다.</td>
         </tr>
+
         <tr>
-          <td data-label="오염된 부품"><img src="img/colorwheel.jpg" alt="칼라휠"></td>
-          <td data-label="구성부품">칼라휠</td>
-          <td data-label="기능">램프의 흰색 빛이 칼라휠을 통해 3원색으로 분리됩니다.</td>
-          <td data-label="클리닝 필요성">미세먼지가 끼면 색감이 제대로 표현되지 않습니다.</td>
+          <td class="td-img" rowspan="2"><img src="img/sub04-1_5.png" alt="칼라휠" class="thumb"></td>
+          <td class="td-part">칼라휠</td>
+          <td class="td-func">램프에 의해 쏘아진 빛이 칼라 휠을 통해 DMD칩까지 전해져 색상을 구현합니다.</td>
+          <td class="td-need">빛이 통과하는 칼라휠에 미세먼지가 끼면 색감이 제대로 표현되지 않습니다.</td>
         </tr>
+
         <tr>
-          <td data-label="오염된 부품"><img src="img/fan.jpg" alt="FAN"></td>
-          <td data-label="구성부품">FAN</td>
-          <td data-label="기능">램프온도를 낮추고 냉식을 외부로 방출합니다.</td>
-          <td data-label="클리닝 필요성">먼지로 인해 내부 통풍이 원활하지 않으면 온도가 급상승할 수 있습니다.</td>
+          <td class="td-part">FAN</td>
+          <td class="td-func">램프로 인해 내부온도가 300도에 이르게 되는 것을 외부의 찬공기를 이용하여(공냉식) 외부로 발산하는 역할을 합니다.</td>
+          <td class="td-need">먼지로 인해 팬 내부 모터가 동작되지 않으면 내부 온도상승으로 갑자기 꺼지는 현상이 발생할 수 있습니다.</td>
         </tr>
       </tbody>
     </table>
-
   </div>
-
 </body>
 </html>
