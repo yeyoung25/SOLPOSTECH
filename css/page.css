@@ -1301,28 +1301,11 @@
     position: relative;
     border: 1px solid #cccccc;
     border-radius: 20px;
-    height: 650px;
+    height: min(650px, 38vw);;
     margin-bottom: 100px;
 }
-.sub02_con04 .sub02_con04_detail ul li{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
 .sub02_con04 .sub02_con04_detail ul li .card img{
-    width: 90%;
-}
-.sub02_con04 .sub02_con04_detail ul li:first-child{
-    left: 5%;
-    z-index: 100;
-}
-.sub02_con04 .sub02_con04_detail ul li:nth-child(2){
-    right: 5%;
-    z-index: 100;
-}
-.sub02_con04 .sub02_con04_detail ul li:last-child{
-    left: 40%;
-    z-index: 10;
+    width: 100%;
 }
 .sub02_con04 .sub02_con04_detail>div b{
     display: block;
@@ -1334,7 +1317,9 @@
 }
 .sub02_con04 .sub02_con04_detail>div img{
     display: block;
+    width: 100%;
     margin: 0 auto;
+    max-width: 450px;
 }
 
 /* sub02_con04 Fin */
@@ -2000,6 +1985,53 @@
         line-height: 22px;
         font-size: 16px;
     }
+    .sub02_con04 .sub02_con04_detail>b::after{
+        height: 60px;
+        bottom: -15.5vh;
+    }
+    .sub02_con04 .sub02_con04_detail p{
+        line-height: 25px;
+        font-size: 14px;
+    }
+    .sub02_con04 .sub02_con04_detail p br{
+        display: none;
+    }
+    /* sub02_con03 Fin */
+    .sub02_con04 .sub02_con04_detail>b{
+        margin-bottom: 140px;
+        line-height: 40px;
+        font-size: 24px;
+    }
+    .sub02_con04 .sub02_con04_detail ul{
+        height: min(800px, 170vw);
+    }
+    .sub02_con04 .sub02_con04_detail ul li{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .sub02_con04 .sub02_con04_detail ul li:first-child{
+        width: 90%;
+        max-width: 400px;
+        top: 5%;
+        z-index: 100;
+    }
+    .sub02_con04 .sub02_con04_detail ul li:nth-child(2){
+        width: 70%;
+        top: 50%;
+        max-width: 330px;
+        z-index: 100;
+    }
+    .sub02_con04 .sub02_con04_detail ul li:last-child{
+        width: 250px;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 10;
+    }
+    .sub02_con04 .sub02_con04_detail>div b{
+        font-size: 20px;
+    }
+    /* sub02_con04 Fin */
 }
 /* 모바일 */
 @media screen and (min-width: 768px) and (max-width: 1279px){
@@ -2318,6 +2350,50 @@
         display: none;
     }
     /* sub02_con03 Fin */
+    .sub02_con04 .sub02_con04_detail>b{
+        margin-bottom: 200px;
+        line-height: 60px;
+        font-size: 40px;
+    }
+    .sub02_con04 .sub02_con04_detail>b::after{
+        height: 16vh;
+        bottom: -20vh;
+
+    }
+    .sub02_con04 .sub02_con04_detail ul{
+        height: min(650px, 45vw);
+    }
+    .sub02_con04 .sub02_con04_detail ul li:nth-child(2){
+        right: 5%;
+    }
+    .sub02_con04 .sub02_con04_detail p{
+        line-height: 22px;
+        font-size: 16px;
+    }
+    .sub02_con04 .sub02_con04_detail ul li{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .sub02_con04 .sub02_con04_detail ul li:first-child{
+        left: 5%;
+        z-index: 100;
+        width: 50%;
+    }
+    .sub02_con04 .sub02_con04_detail ul li:nth-child(2){
+        right: 5%;
+        z-index: 100;
+        width: 30%;
+    }
+    .sub02_con04 .sub02_con04_detail ul li:last-child{
+        left: 40%;
+        z-index: 10;
+        width: 40%;
+    }
+    .sub02_con04 .sub02_con04_detail>div b{
+        font-size: 24px;
+    }
+    /* sub02_con04 Fin */
 }
 @media screen and (min-width: 768px) and (max-width: 900px){
     .section01 .section01Box {
@@ -2429,5 +2505,26 @@
         font-weight: 900;
         color: #b7cfe6;
     }
+    .sub02_con04 .sub02_con04_detail ul li{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .sub02_con04 .sub02_con04_detail ul li:first-child{
+        left: 5%;
+        z-index: 100;
+        width: 50%;
+    }
+    .sub02_con04 .sub02_con04_detail ul li:nth-child(2){
+        right: 5%;
+        z-index: 100;
+        width: 30%;
+    }
+    .sub02_con04 .sub02_con04_detail ul li:last-child{
+        left: 40%;
+        z-index: 10;
+        width: 40%;
+    }
+    /* sub02_con04 Fin */
 }
 /* pc */
