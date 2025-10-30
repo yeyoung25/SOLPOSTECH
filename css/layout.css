@@ -102,7 +102,7 @@ header>div ul li:hover .depth2 li a:hover{
     color: #1769b4;
 }
 header .menuBar span{
-    transition: all 0.4s;
+    transition: all 0.2s;
 }
 header .menuBar.toggle span:first-child{
     transform: rotate(-45deg) translate(-4.5px, 3px);
