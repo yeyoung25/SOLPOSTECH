@@ -62,7 +62,6 @@ header.shrink>div a:hover{
     color: #1769b4;
     font-weight: 700;
 }
-header:hover>div a:hover
 
 
 header:hover>div ul li{
@@ -94,6 +93,14 @@ header>div .depth2 li:not(:last-child){
 header>div ul li:hover .depth2{
     display: block;
     width: 150px;
+}
+header>div .navMenu.active{
+    display: block;
+    position: relative;
+    background-color: #fff;
+}
+header>div .navMenu.active li{
+    position: absolute;
 }
 header>div ul li:hover .depth2 li a{
     color: #222;

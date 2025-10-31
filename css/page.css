@@ -1629,6 +1629,90 @@ mark{
     width: 100%;
 }
 /* sub04_con03 Fin */
+.sub05_con03 .accordion{
+    border-top: 2px solid #005bac;
+    cursor: pointer;
+    padding-bottom: 125px;
+}
+.sub05_con03 .accordion li{
+    display: flex;
+    flex-wrap: wrap;
+}
+.sub05_con03 .accordion li strong{
+    display: block;
+    position: relative;
+    width: 100%;
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+}
+.sub05_con03 .accordion li>div{
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #005bac;
+    width: 100%;
+    padding: 20px 0;
+    background-color: #f3f3f3;
+}
+.sub05_con03 .accordion li>strong{
+    display: block;
+    position: relative;
+    width: 100%;
+    padding: 20px 0;
+    border-bottom: 1px solid #acacac;
+}
+.sub05_con03 .accordion_item.active li strong::after{
+    background: url('../img/faq_color.png') no-repeat center / contain;
+}
+.sub05_con03 .accordion li strong::after{
+    background: url('../img/gray.png') no-repeat center / contain;
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 9px;
+    position: absolute;
+    right: 60px;
+    top: 24px;
+    transition: transform 0.2s ease-in-out;
+}
+.sub05_con03 .accordion li strong span:first-child{
+    display: inline-block;
+    width: 10%;
+    text-align: center;
+}
+.sub05_con03 .accordion li strong b{
+    display: inline-block;
+    margin-right: 30px;
+    color: #c5c5c5;
+}
+.sub05_con03 .accordion li .accordion_content{
+    display: none;
+}
+.sub05_con03 .accordion_item.active .accordion_content{
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+}
+.sub05_con03 .accordion li .accordion_content::before{
+    content: '';
+    display: inline-block;
+    width: 10%;
+}
+.sub05_con03 .accordion li .accordion_content b{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 30px;
+    color: #005bac;
+}
+.sub05_con03 .accordion li .accordion_content b+div{
+    width: 80%;
+    line-height: 22px;
+    word-break: keep-all;
+}
+.sub05_con03 .accordion li .accordion_content b+div>img{
+    width: 100%;
+    margin-top: 20px;
+}
+/* sub05_con03 Fin */
 
 @media screen and (max-width: 767px){
     .mainBanner .mainBanBox .mainBanTxtBox{
@@ -2473,6 +2557,21 @@ mark{
         margin-bottom: 50px;
     }
     /* sub04_con03 Fin */
+    .sub05_con03 .accordion{
+        font-size: 14px;
+    }
+    .sub05_con03 .accordion li strong::after{
+        right: 20px;
+    }
+    .sub05_con03 .accordion li strong::after{
+        width: 13px;
+        height: 7px;
+    }
+    .sub05_con03 .accordion li .accordion_content b+div{
+        padding-right: 15px;
+        box-sizing: border-box;
+    }
+    /* sub05_con03 Fin */
 }
 /* 모바일 */
 @media screen and (min-width: 768px) and (max-width: 1279px){

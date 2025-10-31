@@ -1,12 +1,14 @@
 
 $(window).on('scroll', function() {
-    $('header').toggleClass('shrink', $(this).scrollTop() > 50);
+  $('header').toggleClass('shrink', $('.menuBar').hasClass('toggle') || $(this).scrollTop() > 50);
   });
 
   $(document).ready(function(){
     sub02_02Toggle();
     menuButton();
-    // navButton();
+    accordionFaq($(".sub05_con03 .accordion_item"));
+    navtoggle01();
+    // navtoggle02();
   });
 
 
@@ -32,5 +34,24 @@ $(window).on('scroll', function() {
         $(this).toggleClass('toggle');
         $('.navMenu').toggleClass('active');
       });
+  }
 
+  function accordionFaq(button){
+    $(button).click(function(){
+      $(this).toggleClass("active");
+    });
+  }
+
+  function navtoggle01(){
+    $('.menuBar').on('click', function(){
+      $('header').toggleClass('shrink');
+    });
+  }
+
+
+  function navtoggle02(){
+    $('.menuBar').on('click', function(){
+      $(this).toggleClass('toggle');
+      $('.navMenu').toggleClass('active');
+    });
   }
