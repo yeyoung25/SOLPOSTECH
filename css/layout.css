@@ -94,14 +94,6 @@ header>div ul li:hover .depth2{
     display: block;
     width: 150px;
 }
-header>div .navMenu.active{
-    display: block;
-    position: relative;
-    background-color: #fff;
-}
-header>div .navMenu.active li{
-    position: absolute;
-}
 header>div ul li:hover .depth2 li a{
     color: #222;
 }
@@ -414,6 +406,14 @@ footer>p{
     header:hover>div h1 a,
     header.shrink>div h1 a{
         width: 200px;
+    }
+    header>div .navMenu.active{
+        display: block;
+        position: relative;
+        background-color: #fff;
+    }
+    header>div .navMenu.active li{
+        position: absolute;
     }
     footer .fotTop,
     footer>div,
