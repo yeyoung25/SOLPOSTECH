@@ -22,9 +22,8 @@ $(window).on('scroll', function() {
   }
 
   function menuButton(){
-    var menuBar = document.querySelector(".menuBar");
-    menuBar.addEventListener("click", () => {
-    menuBar.classList.toggle("toggle");
+    $('.menuBar').on('click', function(){
+      $(this).toggleClass('toggle');
     });
   }
 
