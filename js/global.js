@@ -8,7 +8,7 @@ $(window).on('scroll', function() {
     menuButton();
     accordionFaq($(".sub05_con03 .accordion_item"));
     navtoggle01();
-    // navtoggle02();
+    navButton();
   });
 
 
@@ -29,29 +29,22 @@ $(window).on('scroll', function() {
   }
 
 
-  function navButton(){
-      $('.menuBar').on('click', function(){
-        $(this).toggleClass('toggle');
-        $('.navMenu').toggleClass('active');
-      });
-  }
-
+  
   function accordionFaq(button){
     $(button).click(function(){
       $(this).toggleClass("active");
     });
   }
-
+  
   function navtoggle01(){
     $('.menuBar').on('click', function(){
       $('header').toggleClass('shrink');
     });
   }
-
-
-  function navtoggle02(){
-    $('.menuBar').on('click', function(){
-      $(this).toggleClass('toggle');
-      $('.navMenu').toggleClass('active');
-    });
+  
+  function navButton(){
+      $('.menuBar').on('click', function(){
+        $(this).toggleClass('toggle');
+        $('.navMenu').toggleClass('active');
+      });
   }
