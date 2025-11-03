@@ -5,7 +5,6 @@ $(window).on('scroll', function() {
 
   $(document).ready(function(){
     sub02_02Toggle();
-    // menuButton();
     accordionFaq($(".sub05_con03 .accordion_item"));
     navtoggle01();
     navButton();
@@ -21,14 +20,6 @@ $(window).on('scroll', function() {
     });
   }
 
-  function menuButton(){
-    $('.menuBar').on('click', function(){
-      $(this).toggleClass('toggle');
-    });
-  }
-
-
-  
   function accordionFaq(button){
     $(button).click(function(){
       $(this).toggleClass("active");
