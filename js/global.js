@@ -5,7 +5,7 @@ $(window).on('scroll', function() {
 
   $(document).ready(function(){
     sub02_02Toggle();
-    menuButton();
+    // menuButton();
     accordionFaq($(".sub05_con03 .accordion_item"));
     navtoggle01();
     navButton();
