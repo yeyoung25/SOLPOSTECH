@@ -50,55 +50,14 @@ header>div ul{
 header>div ul li{
     position: relative;
 }
-header>div ul li>a{
-    display: block;
-    color: #fff;
-    text-align: center;
-    font-weight: 600;
-    font-size: 18px;
-}
-header:hover>div a:hover,
-header.shrink>div a:hover{
-    color: #1769b4;
-    font-weight: 700;
-}
-
-
 header:hover>div ul li{
     position: relative;
-}
-header:hover>div>ul>li>a,
-header.shrink>div>ul>li>a{
-    color: #000;
-    font-size: 18px;
-    line-height: 100px;
-    font-weight: 600;
 }
 header>div>ul>li:not(:first-child){
     margin-left: 2.605vw;
 }
-header>div .depth2{
-    display: none;
-    position: absolute;
-    top: 97px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #fff;
-    padding: 30px;
-    border-top: 3px solid #1769b4;
-}
-header>div .depth2 li:not(:last-child){
-    margin-bottom: 30px;
-}
-header>div ul li:hover .depth2{
-    display: block;
-    width: 150px;
-}
 header>div ul li:hover .depth2 li a{
     color: #222;
-}
-header>div ul li:hover .depth2 li a:hover{
-    color: #1769b4;
 }
 header .menuBar span{
     transition: all 0.2s;
@@ -112,7 +71,6 @@ header .menuBar.toggle span:nth-child(2){
 header .menuBar.toggle span:last-child{
     transform: rotate(45deg) translate(-5px, -4px);
 }
-
 footer{
     background-color: #2a2a2a;
 }
@@ -276,6 +234,78 @@ footer>p{
         background-color: #000;
         height: 2px;
     }
+    
+    header>div .depth2.active{
+        display: block;
+    }
+    .navMenu.navMenu.active{
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 80px;
+        left: 0;
+        border-top: 2px solid #1769b4;
+        background-color: #fff;
+        padding: 50px 30px;
+        box-sizing: border-box;
+    }
+    header>div ul li>a{
+        display: block;
+        font-weight: 500;
+        font-size: 14px;
+    }
+    header>div>ul>li:not(:first-child){
+        margin-left: 0;
+    }
+    header:hover>div>ul>li>a,
+    header.shrink>div>ul>li>a{
+        color: #000;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    header>div .depth2 li:not(:last-child){
+        margin-bottom: 15px;
+    }
+    header:hover>div>ul>li,
+    header.shrink>div>ul>li{
+        position: relative;
+        margin-bottom: 50px;
+    }
+    header:hover>div>ul>li>a,
+    header.shrink>div>ul>li>a{
+        font-weight: 700;
+    }
+    header:hover>div>ul>li::after,
+    header.shrink>div>ul>li::after{
+        background: url('../img/gray.png') no-repeat right / contain;
+        content: '';
+        display: inline-block;
+        width: 14px;
+        height: 9px;
+        position: absolute;
+        top: 5px;
+        right: 0;
+        transition: transform 0.2s ease-in-out;
+    }
+    .navMenu > li .depth2{ 
+        display: none; 
+        opacity: 0;
+    }
+    .navMenu > li.active .depth2{
+        display: block;
+        opacity: 1;
+        transition-duration: 0.5s;
+        transition-property: height, opacity;
+        overflow-y: hidden;
+        margin: 20px 0 30px;
+    }
+    .navMenu > li.active>a{
+        color: #1769b4;
+    }
+    header:hover>div>.navMenu>li.active::after,
+    header.shrink>div>.navMenu>li.active::after{
+        transform: rotate(-180deg);
+    }
     .menuBar span:first-child{
         top: 34px;
         right: 0;
@@ -359,12 +389,6 @@ footer>p{
     header>div h1{
         padding: 25px 0;
     }
-    header:hover>div>ul>li>a{
-        line-height: 80px;
-    }
-    header>div .depth2{
-        top: 77px;
-    }
     .common{
         width: 95%;
     }
@@ -412,8 +436,76 @@ footer>p{
         position: relative;
         background-color: #fff;
     }
-    header>div .navMenu.active li{
+    header>div .depth2.active{
+        display: block;
+    }
+    .navMenu.navMenu.active{
+        display: block;
         position: absolute;
+        width: 100%;
+        top: 80px;
+        left: 0;
+        border-top: 2px solid #1769b4;
+        background-color: #fff;
+        padding: 50px 30px;
+        box-sizing: border-box;
+    }
+    header>div ul li>a{
+        display: block;
+        font-weight: 500;
+        font-size: 14px;
+    }
+    header>div>ul>li:not(:first-child){
+        margin-left: 0;
+    }
+    header:hover>div>ul>li>a,
+    header.shrink>div>ul>li>a{
+        color: #000;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    header>div .depth2 li:not(:last-child){
+        margin-bottom: 15px;
+    }
+    header:hover>div>ul>li,
+    header.shrink>div>ul>li{
+        position: relative;
+        margin-bottom: 50px;
+    }
+    header:hover>div>ul>li>a,
+    header.shrink>div>ul>li>a{
+        font-weight: 700;
+    }
+    header:hover>div>ul>li::after,
+    header.shrink>div>ul>li::after{
+        background: url('../img/gray.png') no-repeat right / contain;
+        content: '';
+        display: inline-block;
+        width: 14px;
+        height: 9px;
+        position: absolute;
+        top: 5px;
+        right: 0;
+        transition: transform 0.2s ease-in-out;
+    }
+    .navMenu > li .depth2{ 
+        display: none; 
+        opacity: 0;
+    }
+    .navMenu > li.active .depth2{
+        display: block;
+        opacity: 1;
+        transition-duration: 0.5s;
+        transition-property: height, opacity;
+        overflow-y: hidden;
+        margin: 20px 0 30px;
+    }
+    .navMenu > li.active>a{
+        color: #1769b4;
+    }
+    header:hover>div>.navMenu>li.active::after,
+    header.shrink>div>.navMenu>li.active::after{
+        transform: rotate(-180deg);
     }
     footer .fotTop,
     footer>div,
@@ -432,5 +524,46 @@ footer>p{
 @media screen and (min-width:1280px){
     .menuBar{
         display: none;
+    }
+        
+    header>div .depth2{
+        display: none;
+        position: absolute;
+        top: 97px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #fff;
+        padding: 30px;
+        border-top: 3px solid #1769b4;
+    }
+    header>div ul li:hover .depth2{
+        display: block;
+        width: 150px;
+    }
+    header>div ul li>a{
+        display: block;
+        color: #fff;
+        text-align: center;
+        font-weight: 600;
+        font-size: 18px;
+    }
+        
+    header:hover>div a:hover,
+    header.shrink>div a:hover{
+        color: #1769b4;
+        font-weight: 700;
+    }
+    header>div .depth2 li:not(:last-child){
+        margin-bottom: 30px;
+    }
+    header:hover>div>ul>li>a,
+    header.shrink>div>ul>li>a{
+        color: #000;
+        font-size: 18px;
+        line-height: 100px;
+        font-weight: 600;
+    }
+    header>div ul li:hover .depth2 li a:hover{
+        color: #1769b4;
     }
 }

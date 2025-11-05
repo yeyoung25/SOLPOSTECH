@@ -1674,6 +1674,9 @@ mark{
     top: 24px;
     transition: transform 0.2s ease-in-out;
 }
+.sub05_con03 .accordion li.active strong::after{
+    transform: rotate(-180deg);
+}
 .sub05_con03 .accordion li strong span:first-child{
     display: inline-block;
     width: 10%;
