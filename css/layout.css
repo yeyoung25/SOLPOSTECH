@@ -470,7 +470,7 @@ footer>p{
     header:hover>div>ul>li,
     header.shrink>div>ul>li{
         position: relative;
-        margin-bottom: 50px;
+        margin-bottom: 70px;
     }
     header:hover>div>ul>li>a,
     header.shrink>div>ul>li>a{
