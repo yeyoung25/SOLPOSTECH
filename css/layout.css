@@ -285,7 +285,7 @@ footer>p{
         position: absolute;
         top: 5px;
         right: 0;
-        transition: transform 0.2s ease-in-out;
+        transition: transform 0.2s ;
     }
     .navMenu > li .depth2{ 
         display: block;
@@ -299,9 +299,11 @@ footer>p{
         display: block;
         opacity: 1;
     }
+    .navMenu>li>a{
+        margin-bottom: 20px;
+    }
     .navMenu > li.active>a{
         color: #1769b4;
-        margin-bottom: 20px;
     }
     header:hover>div>.navMenu>li.active::after,
     header.shrink>div>.navMenu>li.active::after{
@@ -487,7 +489,7 @@ footer>p{
         position: absolute;
         top: 5px;
         right: 0;
-        transition: transform 0.2s ease-in-out;
+        transition: transform 0.2s;
     }
     .navMenu > li .depth2{ 
         opacity: 0;
@@ -500,6 +502,9 @@ footer>p{
         display: block;
         opacity: 1;
         margin: 20px 0 30px;
+    }
+    .navMenu>li>a{
+        margin-bottom: 20px;
     }
     .navMenu > li.active>a{
         color: #1769b4;
