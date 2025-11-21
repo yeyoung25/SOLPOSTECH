@@ -288,19 +288,20 @@ footer>p{
         transition: transform 0.2s ease-in-out;
     }
     .navMenu > li .depth2{ 
-        display: none; 
+        display: block;
         opacity: 0;
+        height: 0;
+        transition-duration: 0.3s;
+        transition-property: height, opacity;
+        overflow-y: hidden;
     }
     .navMenu > li.active .depth2{
         display: block;
         opacity: 1;
-        transition-duration: 0.5s;
-        transition-property: height, opacity;
-        overflow-y: hidden;
-        margin: 20px 0 30px;
     }
     .navMenu > li.active>a{
         color: #1769b4;
+        margin-bottom: 20px;
     }
     header:hover>div>.navMenu>li.active::after,
     header.shrink>div>.navMenu>li.active::after{
@@ -489,15 +490,15 @@ footer>p{
         transition: transform 0.2s ease-in-out;
     }
     .navMenu > li .depth2{ 
-        display: none; 
         opacity: 0;
+        height: 0;
+        transition-duration: 0.5s;
+        transition-property: height, opacity;
+        overflow-y: hidden;
     }
     .navMenu > li.active .depth2{
         display: block;
         opacity: 1;
-        transition-duration: 0.5s;
-        transition-property: height, opacity;
-        overflow-y: hidden;
         margin: 20px 0 30px;
     }
     .navMenu > li.active>a{

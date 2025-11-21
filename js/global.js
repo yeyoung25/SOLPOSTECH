@@ -80,10 +80,23 @@ $(document).on('click', function(e){
     });
   }
 
-  function mainFnb(button){
-    $(button).click(function(){
-      $(this).toggleClass("active");
-    });
+  function mainFnb(button){ 
+    $(button).click(function(){ 
+      let li = $(this).find('li'); 
+      let liHeight = li.outerHeight(true); 
+      let margin = li.outerHeight(true) - li.outerHeight(); 
+      let liLength = li.length; 
+      let height = liHeight * liLength - margin; 
+      console.log(height) 
+      
+      $(this).toggleClass("active"); 
+      
+      if($(this).hasClass('active')){ 
+        $(this).children('ul').css('height', height + 'px'); 
+      }else { 
+        $(this).children('ul').css('height', 0 + 'px'); 
+      } 
+    }); 
   }
 
   function navMenuButton(){
