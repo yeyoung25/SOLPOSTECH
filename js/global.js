@@ -82,22 +82,26 @@ $(document).on('click', function(e){
 
   function mainFnb(button){ 
     $(button).click(function(){ 
-      let li = $(this).find('li'); 
-      let liHeight = li.outerHeight(true); 
-      let margin = li.outerHeight(true) - li.outerHeight(); 
-      let liLength = li.length; 
-      let height = liHeight * liLength - margin; 
-      console.log(height) 
+      $(button).not(this).removeClass("active").children("ul").css("height", "0px");
+  
+      let li = $(this).children('ul').children('li');
+      let height = 0;
+      li.each(function() {
+        height += $(this).outerHeight(true);
+      });
+  
+      console.log(height); 
       
       $(this).toggleClass("active"); 
       
-      if($(this).hasClass('active')){ 
+      if($(this).hasClass('active')) { 
         $(this).children('ul').css('height', height + 'px'); 
-      }else { 
-        $(this).children('ul').css('height', 0 + 'px'); 
+      } else { 
+        $(this).children('ul').css('height', '0px'); 
       } 
     }); 
   }
+  
 
   function navMenuButton(){
     $('.navMenu').on('click', '> li > a', function(e){
