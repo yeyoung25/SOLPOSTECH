@@ -12,7 +12,6 @@ $(document).on('click', function(e){
     headerScroll();
     sub02_02Toggle();
     accordionFaq($(".sub05_con03 .accordion_item"));
-    navtoggle01();
     navButton();
     depth2toggle();
     mainFnb($("header>div>.navMenu>li"));
@@ -51,13 +50,6 @@ $(document).on('click', function(e){
     });
   }
   
-
-  // header nav
-  function navtoggle01(){
-    $('.menuBar').on('click', function(){
-      $('header').toggleClass('shrink');
-    });
-  }
   
   function navButton(){
       $('.menuBar').on('click', function(){
