@@ -1,7 +1,5 @@
 $(window).on('scroll', function() {
-  if (!$('.navMenu > li').hasClass('active')) {
-    $('header').toggleClass('shrink', $('.menuBar').hasClass('toggle') || $(this).scrollTop() > 50);
-  }
+  $('header').toggleClass('shrink', $('.menuBar').hasClass('toggle') || $(this).scrollTop() > 50);
 });
 
 $(document).on('click', function(e){
@@ -12,8 +10,6 @@ $(document).on('click', function(e){
 
   $(document).ready(function(){
     headerScroll();
-    sub02_02Toggle();
-    accordionFaq($(".sub05_con03 .accordion_item"));
     navButton();
     depth2toggle();
     mainFnb($("header>div>.navMenu>li"));
@@ -32,34 +28,13 @@ $(document).on('click', function(e){
       $(".go_top").removeClass("scrollTop");
     }
   }
-
-
-  // 판매제품안내 서브페이지(2-2)
-  function sub02_02Toggle(){
-    $('.sub02_con02_detail>ul>li').click(function(){
-      $('.sub02_con02_detail>ul>li').removeClass('active');
-      $(this).addClass('active');
-      $('.sub02_con02_detail>div').removeClass('active');
-      $('.' + $(this).attr('data-tab')).addClass('active');
-    });
-  }
-
-
-  // FaQ 서브페이지
-  function accordionFaq(button){
-    $(button).click(function(){
-      $(this).toggleClass("active");
-    });
-  }
-  
-  
+ 
   function navButton(){
       $('.menuBar').on('click', function(){
         $(this).toggleClass('toggle');
         $('.navMenu').toggleClass('active');
       });
   }
-  
   function depth2toggle(){
     $('.navMenu').on('click', '> li > a', function(e){
       e.preventDefault();
