@@ -32,14 +32,6 @@ $(window).on('resize', function () {
     }
   }
 
-  // function headershrink() {
-  //   if ($('.menuBar').hasClass('toggle')) {
-  //     $('header').addClass('shrink');
-  //   } else {
-  //     $('header').removeClass('shrink');
-  //   }
-  // }
-
   function headershrink() {
     if ($('.menuBar:visible').length && $('.menuBar').hasClass('toggle')) {
       $('header').addClass('shrink');
