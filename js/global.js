@@ -1,5 +1,7 @@
 $(window).on('scroll', function() {
-  $('header').toggleClass('shrink', $('.menuBar').hasClass('toggle') || $(this).scrollTop() > 50);
+  if (!$('.navMenu > li').hasClass('active')) {
+    $('header').toggleClass('shrink', $('.menuBar').hasClass('toggle') || $(this).scrollTop() > 50);
+  }
 });
 
 $(document).on('click', function(e){
@@ -57,6 +59,7 @@ $(document).on('click', function(e){
         $('.navMenu').toggleClass('active');
       });
   }
+  
   function depth2toggle(){
     $('.navMenu').on('click', '> li > a', function(e){
       e.preventDefault();

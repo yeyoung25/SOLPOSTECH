@@ -1717,6 +1717,24 @@ mark{
 }
 /* sub05_con03 Fin */
 
+.privacyPolicy h3,
+.termsOfUse h3{
+    font-size: 20px;
+    margin: 30px 0 20px;
+    color: #1a1a1a;
+}
+.privacyPolicy ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+.privacyPolicy ul li:not(:last-child) {
+    margin-bottom: 5px;
+}
+.termsOfUse h3+p {
+    margin-bottom: 5px;
+}
+/* privacyPolicy, termsOfUse Fin */
+
 @media screen and (max-width: 767px){
     .mainBanner .mainBanBox .mainBanTxtBox{
         left: 2.5%;
