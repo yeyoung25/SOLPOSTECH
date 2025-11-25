@@ -14,6 +14,7 @@ $(document).on('click', function(e){
     depth2toggle();
     mainFnb($("header>div>.navMenu>li"));
     navMenuButton();
+    headershrink();
   });
 
 
@@ -28,13 +29,24 @@ $(document).on('click', function(e){
       $(".go_top").removeClass("scrollTop");
     }
   }
- 
-  function navButton(){
-      $('.menuBar').on('click', function(){
-        $(this).toggleClass('toggle');
-        $('.navMenu').toggleClass('active');
-      });
+
+  function headershrink() {
+    if ($('.menuBar').hasClass('toggle')) {
+      $('header').addClass('shrink');
+    } else {
+      $('header').removeClass('shrink');
+    }
   }
+ 
+function navButton(){
+  $('.menuBar').on('click', function(){
+    $(this).toggleClass('toggle');
+    $('.navMenu').toggleClass('active');
+
+    headershrink();
+  });
+}
+  
   function depth2toggle(){
     $('.navMenu').on('click', '> li > a', function(e){
       e.preventDefault();
