@@ -1,7 +1,6 @@
 *{
     margin: 0; padding: 0; text-decoration: none; list-style: none; color: #222; font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
 }
-body{max-width: 1920px;margin: 0 auto;}
 header{
     position: fixed;
     box-sizing: border-box;
