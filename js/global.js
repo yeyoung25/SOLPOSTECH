@@ -2,11 +2,6 @@ $(window).on('scroll', function() {
   $('header').toggleClass('shrink', $('.menuBar').hasClass('toggle') || $(this).scrollTop() > 50);
 });
 
-$(document).on('click', function(e){
-  if (!$(e.target).closest('header .navMenu').length) {
-    $('.navMenu > li').removeClass('active');
-  }
-});
 
   $(document).ready(function(){
     headerScroll();
