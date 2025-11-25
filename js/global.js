@@ -1,7 +1,14 @@
 $(window).on('scroll', function() {
   $('header').toggleClass('shrink', $('.menuBar').hasClass('toggle') || $(this).scrollTop() > 50);
 });
-
+$(window).on('resize', function () {
+  const windowWidth = $(window).width();
+  if (windowWidth >= 1024) {
+    $('.menuBar').removeClass('toggle');
+    $('.navMenu').removeClass('active');
+    $('header').removeClass('shrink');
+  }
+});
 
   $(document).ready(function(){
     headerScroll();
@@ -25,8 +32,16 @@ $(window).on('scroll', function() {
     }
   }
 
+  // function headershrink() {
+  //   if ($('.menuBar').hasClass('toggle')) {
+  //     $('header').addClass('shrink');
+  //   } else {
+  //     $('header').removeClass('shrink');
+  //   }
+  // }
+
   function headershrink() {
-    if ($('.menuBar').hasClass('toggle')) {
+    if ($('.menuBar:visible').length && $('.menuBar').hasClass('toggle')) {
       $('header').addClass('shrink');
     } else {
       $('header').removeClass('shrink');
