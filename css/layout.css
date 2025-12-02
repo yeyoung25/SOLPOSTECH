@@ -175,13 +175,12 @@ footer>p{
 
 
 @media screen and (max-width: 767px){
-    header {
+    header{
         height: 80px;
     }
-    header>div h1 {
+    header>div h1{
         padding: 25px 0;
     }
-    
     header>div h1 a,
     header:hover>div h1 a,
     header.shrink>div h1 a{
@@ -208,7 +207,7 @@ footer>p{
         font-size: 30px;
     }
     header>div,
-    .common {
+    .common{
         width: 95%;
     }
     .navMenu{
@@ -233,7 +232,6 @@ footer>p{
         background-color: #000;
         height: 2px;
     }
-    
     header>div .depth2.active{
         display: block;
     }
@@ -471,7 +469,7 @@ footer>p{
     header:hover>div>ul>li,
     header.shrink>div>ul>li{
         position: relative;
-        margin-bottom: 70px;
+        margin-bottom: 50px;
     }
     header:hover>div>ul>li>a,
     header.shrink>div>ul>li>a{
@@ -487,7 +485,28 @@ footer>p{
         position: absolute;
         top: 5px;
         right: 0;
-        transition: transform 0.2s;
+        transition: transform 0.2s ;
+    }
+    .navMenu > li .depth2{ 
+        display: block;
+        height: 0;
+        transition-duration: 0.3s;
+        transition-property: height, opacity;
+        overflow-y: hidden;
+    }
+    .navMenu > li.active .depth2{
+        display: block;
+        opacity: 1;
+    }
+    .navMenu>li>a{
+        margin-bottom: 20px;
+    }
+    .navMenu > li.active>a{
+        color: #1769b4;
+    }
+    header:hover>div>.navMenu>li.active::after,
+    header.shrink>div>.navMenu>li.active::after{
+        transform: rotate(-180deg);
     }
     .navMenu > li .depth2{ 
         height: 0;
